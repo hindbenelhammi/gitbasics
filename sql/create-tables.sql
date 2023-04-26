@@ -16,5 +16,6 @@ create table chanson (
     id_chanteur integer
 );
 
-alter table chanson add constraint foreign key id_chanteur
-    references chanteur(id);
+alter table chanson add constraint foreign key fk_chanson_chanteur
+    foreign key (id_chateur)
+    references(id_chanteur);
